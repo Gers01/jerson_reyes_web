@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using proyectofinal.Models;
+
 
 namespace proyectofinal.Controllers
 {
@@ -21,27 +21,12 @@ namespace proyectofinal.Controllers
 
         public IActionResult Index()
         {
-            //Simular los datos como que estoy usando base de datos
+            //simulador de base de datos 
+                
+            List<prestamos> prestamos = new List<prestamos>();
+            
 
-            List<Prestamos> prestamo = new List<prestamos>();
-
-           /*Prestamo.Add(new Prestamos()
-            {
-                Nombre = "Jorge Urbina",
-                Direccion = "Alguna direccion",
-                Edad = 33,
-                Telefono = "12345678"
-            });
-
-            Prestamo.Add(new Prestamos()
-            {
-                Nombre = "Otro Nombre",
-                Direccion = "Otra direccion",
-                Edad = 20,
-                Telefono = "454545454"
-            });*/
-
-            return View(prestamo);
+            return View(prestamos);
         }
 
         public IActionResult Privacy()
