@@ -15,14 +15,33 @@
                     Nombre
                 </th>
                 <th>
+                    Apellido
+                </th>
+                <th>
+                    Cedula
+                </th>
+                <th>
                     Direccion
                 </th>
                 <th>
                     Telefono
                 </th>
                 <th>
-                    Edad
+                    Fecha de prestamo
                 </th>
+                 <th>
+                     Monto
+                </th>
+                 <th>
+                     Interes
+                </th>
+                 <th>
+                     Plazo
+                </th>
+                 <th>
+                     Monto Pagado
+                </th>
+
             </tr>
         </thead>
         <tbody>
@@ -30,10 +49,16 @@
                 foreach (var item in Model)
                 {
                     <tr>
-                        <td>@item.Nombre</td>
-                        <td>@item.Direccion</td>
-                        <td>@item.Edad</td>
-                        <td>@item.Telefono</td>
+                        <td class="alert-success">@item.Nombre</td>
+                        <td class="alert-success">@item.Apellido</td>
+                        <td class="alert-success">@item.Cedula</td>
+                        <td class="alert-success">@item.Direccion</td>
+                        <td class="alert-success">@item.Telefono</td>
+                        <td class="alert-success">@item.Fecha_de_Prestamo</td>
+                        <td class="alert-success">@item.Monto</td>
+                        <td class="alert-success">@item.Interes</td>
+                        <td class="alert-success">@item.Plazo</td>
+                        <td class="alert-success">@item.Edad</td>
                     </tr>
                 }
             }
@@ -43,7 +68,7 @@
 </div>
 
 <div>
-    <a class="btn btn-outline-primary">Nuevo</a>
+    <a class="btn btn-success" href="../Home/ingresodatos" >Registro</a>
 </div>
 
 <hr />
